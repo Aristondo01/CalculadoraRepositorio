@@ -1,2 +1,2 @@
-public interface CalculadoraGeneral {
+public abstract interface CalculadoraGeneral {
 }
