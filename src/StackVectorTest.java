@@ -7,6 +7,7 @@ class StackVectorTest {
     Stack prueba = new StackVector();
 
     @org.junit.jupiter.api.Test
+
     void push() {
         prueba.push(3);
         assertEquals(3,prueba.peek());

@@ -5,6 +5,8 @@ public class Calculadora implements CalculadoraGeneral
     {
         MyStack= new StackVector();
         String respuesta="Opereación no valida";
+
+        /**Separar números de digitos*/
         for (int i =0;i<expresion.length();i++)
         {
             char evaluar =expresion.charAt(i);
@@ -13,6 +15,7 @@ public class Calculadora implements CalculadoraGeneral
                 MyStack.push((int) (evaluar-'0'));
 
             }
+            /**Realizar operaciones utilizando el Stack*/
             else if(evaluar=='/' ||evaluar=='+'||evaluar=='-'||evaluar=='*')
             {
                 int num1= (int) MyStack.pop();
