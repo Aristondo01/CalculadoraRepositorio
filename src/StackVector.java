@@ -9,13 +9,14 @@ public class StackVector<E> implements Stack<E>
     }
     public E pop()
     {
-        E temp =Box.get(Box.size()-1);
-        Box.remove(Box.size()-1);
+        E temp =Box.get(size()-1);
+        Box.remove(size()-1);
         return temp;
     }
     public E peek()
     {
-        return Box.get(Box.size()-1);
+        E temp =Box.get(size()-1);
+        return temp;
     }
     public boolean empty()
     {
